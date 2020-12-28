@@ -1,8 +1,10 @@
 :root {
-    --moderate-violet: hsl(263, 55%, 52%);
+    --moderate-violet: hsl(263, 63%, 80%);
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --very-dark-blackish-blue: hsl(219, 29%, 14%);
-    --white: hsl(0, 0%, 100%);
+    --green: #44da9cd0;
+    --light-blue: #47b9eedc;
+    --yellow: #ebe161dc;
     --light-gray: hsl(0, 0%, 81%);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
@@ -19,3 +21,102 @@ html {
 }
 
 /* ---------------------------------------------- */
+.container {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--light-grayish-blue);
+}
+
+.main {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main__card {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.main__card span {
+    position: absolute;
+    left: calc(100% - 100px);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__card--user {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 14px;
+}
+
+.main__card--user figure {
+    width: 35px;
+    height: 35px;
+}
+
+.main__card--user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main__card--user-name {
+    margin-left: 14px;
+    align-self: center;
+}
+
+.main__card--user-name p:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--very-dark-blackish-blue);
+}
+
+.text-grey {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--very-dark-grayish-blue);
+}
+
+.main__card h3 {
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--very-dark-blackish-blue);
+}
+
+
+/*------- Articles colors -------*/
+.main__card:nth-child(1) {
+    background-color: var(--moderate-violet);
+}
+
+.main__card:nth-child(2) {
+    background-color: var(--green);
+}
+
+.main__card:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+.main__card:nth-child(4) {
+    background-color: var(--light-blue);
+}
+
+.main__card:nth-child(5) {
+    background-color: var(--light-gray);
+}
