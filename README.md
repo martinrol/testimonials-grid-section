@@ -4,3 +4,7 @@
 
 ## Welcome! 👋
 
+### This project is a challenge by Frontend Mentor. 
+> I used HTML5 and CSS3 with flexbox and grid.
+
+> You can see the layout in the following link: 
